@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab-1", "lab-1\lab-1.csproj", "{E20D2AFA-5BAC-46BE-9014-446C4016E17A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab2", "lab2\lab2.csproj", "{88A22431-C9AD-4191-ACF7-9CE440F57362}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab2", "lab2\lab2.csproj", "{88A22431-C9AD-4191-ACF7-9CE440F57362}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab3", "lab3\lab3.csproj", "{2C5F3ADD-53FD-4D4C-901A-E7E81E8A0978}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab3", "lab3\lab3.csproj", "{2C5F3ADD-53FD-4D4C-901A-E7E81E8A0978}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab3-zad", "lab3-zad\lab3-zad.csproj", "{52C64B14-DA02-4BFB-BB57-01535497D694}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab3-zad", "lab3-zad\lab3-zad.csproj", "{52C64B14-DA02-4BFB-BB57-01535497D694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab4", "lab4\lab4.csproj", "{ED57435D-1B08-4763-8AC0-BAE3C81FAC94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{52C64B14-DA02-4BFB-BB57-01535497D694}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52C64B14-DA02-4BFB-BB57-01535497D694}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52C64B14-DA02-4BFB-BB57-01535497D694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED57435D-1B08-4763-8AC0-BAE3C81FAC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED57435D-1B08-4763-8AC0-BAE3C81FAC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED57435D-1B08-4763-8AC0-BAE3C81FAC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED57435D-1B08-4763-8AC0-BAE3C81FAC94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
