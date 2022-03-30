@@ -11,6 +11,12 @@ namespace lab4
         E=30,
         F=20
     }
+
+    record Student (string Name,int Ects, bool Egzam);
+    class ClassStudent
+    {
+        public string Name { get; init; }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -20,10 +26,10 @@ namespace lab4
             string[] vs = Enum.GetNames<Degree>();
             Console.WriteLine(string.Join(",", vs));
             Degree[] degrees = Enum.GetValues<Degree>();
-           /* foreach(Degree d in degrees)
+            foreach(Degree d in degrees)
             {
-                Console.WriteLine($"{d} {(int)}");
-            }*/
+                Console.WriteLine($"{d} {(int)d}");
+            }
             Console.WriteLine("Wpisz ocenę");
             string str = Console.ReadLine();
             try
@@ -43,6 +49,37 @@ namespace lab4
                 _ => 3.0
             };
             Console.WriteLine(ocena);
+            Student student = new Student("Karol", 12, true);
+            Console.WriteLine(student);
+            if (student== new Student("Karol", 12, true))
+            {
+                Console.WriteLine("Identyczni");
+            }
+            else
+            {
+                Console.WriteLine("Różni");
+            }
+            Student[] students =
+            {
+            new Student("Karol", 12, true),
+            new Student("Ewa", 17, false),
+            new Student("Maciek", 18, true),
+            new Student("Ania", 15, false)
+            };
+
+            foreach(Student st in students)
+            {
+                Console.WriteLine(
+                    st.Name +
+                    st switch
+                    {
+                        { Ects:>=17, Egzam:true} => "Zaliczył",
+                        _ => "Nie zaliczył"
+                    }
+                    );
+
+                
+            }
         }
     }
 }
