@@ -54,6 +54,14 @@
         </Button>
         <ComboBox x:Name="OutputCurrencyCode" Background="Azure" Grid.Column="2" HorizontalAlignment="Stretch" Margin="5,10,10,5" VerticalAlignment="Stretch"/>
         <ComboBox x:Name="InputCurrencyCode" Grid.Column="2" HorizontalAlignment="Stretch" Margin="5,5,10,10" Grid.Row="1" VerticalAlignment="Stretch"/>
-
+        <Button
+        Grid.Column="0"
+        Grid.Row="3"
+            Grid.ColumnSpan=="2"
+            FontSize="36"
+            Margin="10"
+            >
+            Wczytaj z Pliku
+        </Button>
     </Grid>
 </Window>
